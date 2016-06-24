@@ -10,10 +10,12 @@ namespace snake_new
     {
         static void Main(string[] args)
         {
-            point p1 = new point(); // классу point присваим имя p1
-            p1.x = 1;
+            point p1 = new point(1, 3, '*'); // классу point присваим имя p1
+           
+            //Сокращаем работу прописывает в классе point сразу все данные 
+            /* p1.x = 1;
             p1.y = 3;
-            p1.sym = '*';
+            p1.sym = '*';*/
 
             //убирае так как добавили в класс функцию
             //Draw (p1.x, p1.y, p1.sym); 
@@ -33,12 +35,9 @@ namespace snake_new
             //Console.SetCursorPosition(x1, y1); 
             //Console.Write(sym1);
 
-            point p2 = new point();
-            p2.x = 4;
-            p2.y = 5;
-            p2.sym = '#';
+            point p2 = new point(4,5,'#');
+                   
             
-            //Draw(p2.x, p2.y, p2.sym);
 
             p2.Draw();
 
